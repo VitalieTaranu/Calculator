@@ -1,0 +1,20 @@
+body {
+    background-color: lightOrange;
+}
+
+body table {
+    border : 1px solid black;
+}
+
+#display {
+    width: 415px;
+    size: 30px;
+}
+input {
+    font-size: 2em;
+    width: 100;
+    height: 85;
+}
+.btn[type='button']:hover {
+    background-color:lightYellow;
+}

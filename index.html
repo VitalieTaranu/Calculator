@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Javascript basics</h2>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+  Click me to update content.
+</button>
+<p id="demo"></p>
+
+<div style="display: inline-block; margin-top: 50px">
+  <button type="button" onclick="document.getElementById('pass').type = 'text'">
+    Show pass
+  </button>
+
+  <button type="button" onclick="document.getElementById('pass').type = 'password'">
+    Hide pass
+  </button>
+  <form>
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" name="pass"><br>
+  </form>
+</div>
+
+<div style="margin-top: 50px">
+</div>
+
+<div style="margin-top: 50px">
+  <button type="button" onclick="document.getElementById('style-btn').style.display='none'">Hide</button>
+  <button type="button" onclick="document.getElementById('style-btn').style.display='inline-block'">Show</button>
+  <button type="button" id="style-btn" onclick="document.getElementById('demo').style.fontSize = '35px'">Style Changes</button>
+</div>
+
+
+</body>
+</html>

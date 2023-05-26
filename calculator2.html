@@ -1,0 +1,58 @@
+<html>
+<head>
+  <link rel="stylesheet" href="calculator1.css">
+  <title> HTML basics</title>
+</head>
+<body>
+<table style="margin: 50px auto;" >
+  <tr>
+    <td colspan="4">
+      <input data-result id="display" type="text" name="display">
+    </td>
+  </tr>
+  <tr>
+    <td><input class="btn" data-role="number" type="button" value="7"> </td>
+    <td><input class="btn" data-role="number" type="button" value="8"> </td>
+    <td><input class="btn" data-role="number" type="button" value="9"> </td>
+    <td><input class="btn" data-role="operator" type="button" value="+"></td>
+  </tr>
+  <tr>
+    <td><input class="btn" type="button" value="4"></td>
+    <td><input class="btn" type="button" value="5"></td>
+    <td><input class="btn" type="button" value="6"></td>
+    <td><input class="btn" type="button" value="-"></td>
+  </tr>
+  <tr>
+    <td><input class="btn" type="button" value="1"></td>
+    <td><input class="btn" type="button" value="2"></td>
+    <td><input class="btn" type="button" value="3"></td>
+    <td><input class="btn" type="button" value="*"></td>
+  </tr>
+  <tr>
+    <td><input class="clear-btn" type="button" value="c"></td>
+    <td><input class="btn" type="button" value="0"></td>
+    <td><input class="result-btn" type="button" value="="></td>
+    <td><input class="btn" type="button" value="/"></td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+
+  document.querySelectorAll('.btn').forEach(btn => btn.addEventListener('click', function() {
+    let display = document.querySelector('#display');
+    display.value += btn.getAttribute('value');
+  }));
+
+  document.querySelector('.result-btn').addEventListener('click', function(){
+    var display = document.querySelector('#display');
+    var expression = display.value;
+    display.value = eval(expression);
+  })
+
+  document.querySelector('.clear-btn').addEventListener('click', function(){
+    var display = document.querySelector('#display');
+    display.value = '';
+  })
+</script>
+</body>
+</html>

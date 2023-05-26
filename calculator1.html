@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" href="calculator1.css">
+  <title> HTML basics</title>
+</head>
+<body>
+<table style="margin: 50px auto;" >
+  <tr>
+    <td colspan="4">
+      <input id="display" type="text" name="display">
+    </td>
+  </tr>
+  <tr>
+    <td><input class="btn" type="button" value="7" onclick="display.value += '7'"></td>
+    <td><input class="btn" type="button" value="8" onclick="display.value += '8'"></td>
+    <td><input class="btn" type="button" value="9" onclick="display.value += '9'"></td>
+    <td><input class="btn" type="button" value="+" onclick="display.value += '+'"></td>
+  </tr>
+  <tr>
+    <td><input class="btn" type="button" value="4" onclick="display.value += '4'"></td>
+    <td><input class="btn" type="button" value="5" onclick="display.value += '5'"></td>
+    <td><input class="btn" type="button" value="6" onclick="display.value += '6'"></td>
+    <td><input class="btn" type="button" value="-" onclick="display.value += '-'"></td>
+  </tr>
+  <tr>
+    <td><input class="btn" type="button" value="1" onclick="display.value += '1'"></td>
+    <td><input class="btn" type="button" value="2" onclick="display.value += '2'"></td>
+    <td><input class="btn" type="button" value="3" onclick="display.value += '3'"></td>
+    <td><input class="btn" type="button" value="*" onclick="display.value += '*'"></td>
+  </tr>
+  <tr>
+    <td><input class="btn" type="button" value="c" onclick="display.value = ''"></td>
+    <td><input class="btn" type="button" value="0" onclick="display.value += '0'"></td>
+    <td><input class="btn" type="button" value="=" onclick="display.value = eval(display.value)"></td>
+    <td><input class="btn" type="button" value="/" onclick="display.value += '/'"></td>
+  </tr>
+</table>
+</body>
+</html>

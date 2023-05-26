@@ -1,0 +1,32 @@
+body {
+    background-color: antiquewhite;
+}
+
+body table {
+   border: 1px solid black;
+}
+
+.val {
+    height: 50px;
+    width: 330px;
+    background-color: aqua;
+}
+
+input {
+    font-size: 3em;
+    width: 100px;
+    height: 85px;
+}
+
+input:hover {
+    background-color:lightYellow;
+}
+
+.foot td {
+    width: 100px;
+}
+
+.label {
+    font-size: 30px;
+    color: blueviolet;
+}
